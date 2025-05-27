@@ -3,4 +3,4 @@
 A repository of me just learning Dart and Flutter.
 
 ### Notes:
-- learn1.dart is like a summary of Net Ninja's tutorial.
+- learn.dart files is like a summary of Net Ninja's tutorial.
