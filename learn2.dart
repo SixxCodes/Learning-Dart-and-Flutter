@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(){
   // -----------part 5 net ninja dart tutorial: list and sets / course-----------
 
@@ -69,4 +71,42 @@ void main(){
   print("length: ${students.length}");
 
   // -----------part 6 net ninja dart tutorial: control flow / course-----------
+
+  //for loop
+  for (int i = 0; i <= 5; i++) {
+    print("current value of i is $i");
+  }
+  print("");
+  for (int i = 5; i > 0; i--) {
+    print("current value of i is $i");
+  }
+
+  List<int> teamNumbers = [1, 5, 6, 9, 123, 3, 5, 2, 456, 789];
+
+  teamNumbers.shuffle();
+  print(teamNumbers);
+  //foreach
+  print("foreach");
+  for (int teamNumber in teamNumbers) {
+    if (teamNumber < 100) {
+      prints("$teamNumber, ");
+    } else {
+      prints("nge, ");
+    }
+  }
+  print("");
+  print("where function");
+  for (int teamNumber in teamNumbers.where((s) => s < 100)) {
+    prints("$teamNumber, ");
+  }
+
 }
+
+void prints(String word) {
+  stdout.write(word);
+}
+
+/*
+print(); "adds new line"
+stdout.write(); :print na tapadd
+*/
